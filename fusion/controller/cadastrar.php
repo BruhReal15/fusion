@@ -33,7 +33,7 @@
     $dir = "usuarios/";
     //verificacao se esta vazio por php
         
-        $u->conectar("fusion_project", "localhost", "root", "");
+        $u->conectar("fusion_project", "db-fusion.cb790qtisjin.us-east-1.rds.amazonaws.com", "admin", "12345678");
         if($u->msgErro == ''){ //ok
             if($senha == $confirmarSenha){
                 if($email == $confirmEmail){
