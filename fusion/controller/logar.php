@@ -18,7 +18,7 @@
     $email = addslashes($_POST['email']);
     $senha = addslashes($_POST['senha']);
 
-    $u->conectar("fusion_project", "localhost", "root", "");
+    $u->conectar("fusion_project", "db-fusion.cb790qtisjin.us-east-1.rds.amazonaws.com", "admin", "12345678");
     if($u->msgErro ==""){
         if($u->logar($email, $senha)){
             header("location: ../acesso.php");
