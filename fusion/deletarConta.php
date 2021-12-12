@@ -9,7 +9,7 @@
     $u = new usuario;
     $dir = "controller/usuarios/";
 
-    $u->conectar("fusion_project", "localhost", "root", "");
+    $u->conectar("fusion_project", "db-fusion.cb790qtisjin.us-east-1.rds.amazonaws.com", "admin", "12345678");
     if($u->msgErro ==""){
         $dado = $u->recuperarDadosUsuarios($_SESSION['id']);
 ?>
