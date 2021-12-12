@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fusion</title>
+    <link rel="stylesheet" href="view/css/estilo-form.css">
+    <link rel="stylesheet" href="view/css/style-login.css">
+</head>
+<body>
+    <div>
+        <h1>Fusion</h1>
+        <p id="subtitle">Continue para efetuar o login</p>
+        <div class="division"></div>
+        <form action="controller/logar.php" method="post">
+            <div>
+                <p>Digite seu email</p>
+                <input type="text" name="email" id="email" placeholder="Digite seu email"  required> 
+            </div>
+            <div>
+                <p>Digite sua senha</p>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+            </div>
+            <div>
+                <input type="checkbox" name="remember" id="remember">
+                Lembrar-me
+            </div>
+            <div>
+                <p id="password-forgot"><a href="formulario.html">Esqueceu sua senha?</a></p>
+            </div>
+            <input type="submit" value="Entrar" id="submit-btn">
+            <div>
+        </form>
+        <p>Não possui uma conta ainda? <a href="formulario.html">Crie uma agora!</a></p>
+    </div>
+</body>
+</html>

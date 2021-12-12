@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+a{
+    color: gray;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, black, rgb(48, 48, 48));
+    
+}
+
+#remember{
+    height: 20px;
+    width: 20px;
+}
+
+#password-forgot{
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+input{
+    color: black;
+}

@@ -1,0 +1,37 @@
+@use 'variables'
+
+form
+    display: flex
+    flex-direction: column
+    width: 50%
+    margin-left: auto
+    margin-right: auto
+    input
+        height: 35px
+        margin-top: 40px
+        border-radius: 10px
+        padding: 5px
+        border-color: variables.$primary-color
+    #submit-btn
+        width: 40%
+        background-color: variables.$primary-color
+        color: white
+        font-size: 20px
+        cursor: pointer
+        transition: 0.3s
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: auto
+        margin-right: auto
+        &:hover
+            border-radius: 40px
+            transform: scale(1.05)
+
+.return-forms
+    font-size: 24px
+    text-align: center
+    margin-top: 50px
+
+
+        

@@ -1,0 +1,153 @@
+@use 'variables'
+@use 'mixins'
+    
+*
+    margin: 0
+    padding: 0
+    font-family: Arial, Helvetica, sans-serif
+    color: white
+li
+    list-style: none
+body
+    background-color: rgb(24, 24, 24)
+
+a
+    text-decoration: none
+
+header
+    width: 100%
+    height: 100px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    font-size: 20px
+    h1
+        font-size: 60px
+        color: variables.$primary-color
+        transition: 0.3s
+    p
+        font-size: 26px
+
+    ul
+        display: flex
+        li
+            list-style: none
+            margin-right: 20px
+            a
+                &:hover
+                    @include mixins.txt-hover()
+    
+.config
+    width: 30%
+    max-width: 400px
+    height: 100vh
+    position: fixed
+    top: 0
+    right: 100px
+    background-color: variables.$primary-color
+    border-radius: 0px 0px 20px 20px
+    transform: translateY(-97vh)
+    transition: 0.3s
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    z-index: 999
+    &:hover
+        transform: translateY(-5vh)
+        @include mixins.box-hover(variables.$secundary-color)
+    h2
+        text-align: center
+        margin-top: 20px
+    &-area
+        text-align: center
+        height: 100% 
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        #img-area
+            p
+                font-size: 30px
+                margin-top: 20px
+        
+        div
+            ul
+                display: flex
+                flex-direction: column
+                li
+                    margin-top: 15px
+                    font-size: 20px
+
+.txt-busca
+    width: 62%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-left: 50px
+    p
+        font-size: 40px
+        font-weight: bold
+        font-style: italic
+    input
+        width: 600px
+        height: 40px
+        font-size: 24px
+        color: black
+        padding: 5px
+        border-radius: 5px
+        
+.container
+    width: 100%
+    height: 300px
+    margin-top: 50px
+    p:nth-child(1)
+        font-size: 24px
+        margin-left: 50px
+    .card
+        width: 250px
+        height: 250px
+        background-color: white
+        float: left
+        margin-left: 50px
+        border-radius: 10px
+        transition: 0.2s
+        margin: 25px 10px  
+        display: flex
+        flex-direction: column
+        align-items: center
+        cursor: pointer
+        
+        &:hover
+            @include mixins.box-hover(variables.$primary-color)
+            transform: scale(1.05)
+        img
+            height: 200px
+            width: 200px
+            margin-left: auto
+            margin-right: auto
+            margin-top: 10px
+        p
+            color: black
+            font-size: 16px    
+            font-weight: bold
+        p:nth-child(3)
+            font-style: italic
+            color: #4b4b4b
+
+.carousel
+    height: 300px
+    &-cell
+        width: 250px
+        height: 250px
+        margin-right: 10px
+        background: #8C8
+        border-radius: 5px
+        &:before
+            display: block
+            text-align: center
+            line-height: 200px
+            font-size: 80px
+            color: white
+
+.flickity-viewport
+    height: 3000px

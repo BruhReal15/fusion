@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body{text-align: center;}
+
+body > div{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+#subtitle{
+    font-weight: bolder;
+    font-size: 34px;
+    margin-top: 15px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+body > div > h1 {
+    font-size: 80px;
+    color: blue;  
+}
+
+.division{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 2px;
+    background-color: rgba(128, 128, 128, 0.336);
+}
+
+
+form{
+    height: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input, select{
+    height: 40px;
+    width: 450px;
+    margin-top: 10px;
+    padding: 5px;
+    transition: 0.2s;
+    border-color: black;
+    color: black;
+}
+
+input:hover, select:hover{
+    border-color: blue;
+    border-radius: 15px;
+}
+
+input:required:invalid{
+    border-color: red;
+}
+input:required:valid{
+    border-color: green;
+}
+
+form > div{
+    margin-top: 20px;
+}
+
+form > div > p{
+    text-align: left;
+    font-weight: bolder;
+}
+
+#confirm-box{
+    width: 50px;
+    height: 20px;
+}
+
+#reset-btn{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#submit-btn{
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    transition: 0.3s;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+
+#submit-btn:hover{
+    transform: scale(1.2);
+}
+
+#login{
+    margin-top: 25px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+a {
+    color: blue;
+}
+
+#privacy{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 14px;
+    width: 60%;
+}
